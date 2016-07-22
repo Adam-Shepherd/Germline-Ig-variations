@@ -53,7 +53,7 @@ else
 my @genes = <GENE>;
 #print "@genes\n";
 
-VARICHECK: while (my $vline = <VARIAT>)		#need add move on to next loop if found to avoid duplicate
+VARICHECK: while (my $vline = <VARIAT>)		
 {
 	foreach my $gline (@genes)
 	{
@@ -66,5 +66,4 @@ VARICHECK: while (my $vline = <VARIAT>)		#need add move on to next loop if found
 	}
 }
 
-print OUTP "Test\n";
 print "Reached end of program.\n";
